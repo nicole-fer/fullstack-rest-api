@@ -20,7 +20,6 @@ export default function Detalhes(){
             })
             .then(() => setStatus('Delete successful'));
             alert("Usuário deletado!")
-            console.log(status)
             navigate('/')
           }
         else {

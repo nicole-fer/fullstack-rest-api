@@ -23,8 +23,6 @@ function App() {
     })
 },[])
 
-console.log(usuarios)
-
   return (
     <div>
       <div>

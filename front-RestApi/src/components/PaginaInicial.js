@@ -36,9 +36,6 @@ function PaginaInicial() {
     /* Pesquisa */
 
     const [search, setSearch] = useState('')
-   
-    console.log(usuarios)
-    console.log(search)
 
   return (
     <div>
@@ -103,9 +100,7 @@ function PaginaInicial() {
                         var sliptRg = rg.replace(/-/g,"")
                         var cpf = usuario.cpf
                         var splitCpf = cpf.replace(/[^0-9]/g,"")
-                        var agoraVai = splitCpf.replace(/-/g,"")
-                        console.log('bbbb',agoraVai)
-                        console.log('aaaa',splitCpf)
+    
                         if(search === ''){
                             return usuario
                         } else if (usuario.nome.toLowerCase().includes(search.toLowerCase())) {
